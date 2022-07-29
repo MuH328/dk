@@ -32,7 +32,7 @@ DD_BOT_ACCESS_TOKEN = ''    # 钉钉机器人的DD_BOT_ACCESS_TOKEN; secrets可�
 DD_BOT_SECRET = ''          # 钉钉机器人的DD_BOT_SECRET; secrets可填
 QQ_SKEY = ''                # qq机器人的QQ_SKEY; secrets可填
 QQ_MODE = ''                # qq机器人的QQ_MODE; secrets可填
-QYWX_AM = 'wwa9210f02a1e0aec4,R0vrTevBNCaAmXeXYeXTLbmgOWje68roOVGr_pajOHo,@all,1000002'                # 企业微信
+QYWX_AM = ''                # 企业微信
 QYWX_KEY = ''                # 企业微信BOT
 PUSH_PLUS_TOKEN = ''        # 微信推送Plus+
 
