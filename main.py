@@ -391,7 +391,9 @@ class DuoKan:
 
 
 if __name__ == "__main__":
-    cookies = os.environ["COOKIES"].split("\n")
+    #cookies = os.environ["COOKIES"].split("\n")
+     _cookies='mi_version=V99.0.3.0.PDGCNXM;_m=1;_n=1;device_id=D0063002c4fb98e7daaa4e0d17fb3df93905d45;app_id=DkReader.Android;build=644210712;channel=Y6WBAG;book_level=0_1;fiction_level=0_1;user_type=1;random_id=fcdf8bdef0423d196e8720af2543c21b;device_hash=ab73a1adc4aa82025840bf9114532df3;oaid=c3f4a229ea8f0a5d;reg_id=JuO43j6EcZZvmZRQnDm1vBIJP6MjwEDH%2Fq2%2FkVRa4pSmV%2FrE1scpxpPeOSegFEKG;device_hash_set=9a77089977e9777956fe75aeb74f546e,0c1386984c4fe17936fcc76dd110361f,ab73a1adc4aa82025840bf9114532df3;personal_recommend=1;_t=1626276838;_c=10052;platform=android;device_model=MIX%202S;device_name=polaris;os_version=9;os_sdk=28;manufacturer=Xiaomi;token=oTVlAPo8yk-q9Gdg839hfAis0FvZ7VqpIzdWtLzixxdNja7iFqgBGa36pieV60sbFWaTZB3ujlrX65e7W7xKQg..;\nmi_version=V99.3.5.0.PDGCNXM;_m=1;_n=1;platform=android;app_id=DkReader.Android;build=655211216;channel=Y6WBAG;first_version=646210829;version_name=6.5.5;device_model=MIX%202S;device_name=polaris;os_version=9;os_sdk=28;manufacturer=Xiaomi;book_level=0_1;fiction_level=0_1;user_type=0;random_id=571961e11dd78cace3f8b11d5397cf6d;reg_id=Pg1MlW1yEb%2F2XJ9zgqtQ2ZzsbDjTmSNL6ARIF%2BcjPEo%3D;personal_recommend=1;store_pref=male_fiction;_t=1640182184;_c=52911;device_hash=ab73a1adc4aa82025840bf9114532df3;oaid=ba7139cb6baad1ec;android_id_hash=571961e11dd78cace3f8b11d5397cf6d;device_id=D00630055106df2f764f095516b3b21b4a2f94c;ss_id=3cce9d98442a775ff9d5136773d0b4cf;token=raDLNEUbrB8DZyQAuQae7FmoLd9PwRzpQNUZDp7oXVcZ4hVXA-hJNz94gaxielEQseJtjWrt3Ik4w4BYymI3eg..;'
+    cookies = _cookies.split("\n")
     start_time = time.time()
     for index, cookie in enumerate(cookies):
         print(f"\n=====开始第 {index+1} 个多看账号=====")
