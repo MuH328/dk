@@ -400,7 +400,7 @@ if __name__ == "__main__":
     start_time = time.time()
     for index, cookie in enumerate(cookies):
         print(f"\n=====开始第 {index+1} 个多看账号=====")
-        tz = ""
+        tz = "第 {index+1} 个多看账号"
         dksign = DuoKan(cookie)
         dksign.get_info()
         tz += dksign.check_in() + "\n"
@@ -413,6 +413,6 @@ if __name__ == "__main__":
         tz += dksign.get_info("end")
         print(tz)
         #dksign.push(tz)
-        send('多看书币',tz)
+        send('📣多看阅读签到通知📣',tz)
     print(f"\n\n🕛耗时：{(time.time() - start_time):.2f} 秒")
     
