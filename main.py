@@ -413,5 +413,6 @@ if __name__ == "__main__":
         tz += dksign.get_info("end")
         print(tz)
         #dksign.push(tz)
+        send('多看书币',tz)
     print(f"\n\n🕛耗时：{(time.time() - start_time):.2f} 秒")
-    send('多看书币',tz)
+    
