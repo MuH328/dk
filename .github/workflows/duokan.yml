@@ -1,4 +1,4 @@
-name: 多看阅读
+name: duokan
 
 on:
   workflow_dispatch:
