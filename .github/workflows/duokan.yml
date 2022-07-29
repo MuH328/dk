@@ -28,3 +28,4 @@ jobs:
         run: python3 main.py 
         env:
             COOKIES: ${{ secrets.COOKIES }}
+            QYWX_AM: ${{ secrets.QYWX_AM }}
