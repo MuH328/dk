@@ -400,7 +400,7 @@ if __name__ == "__main__":
     start_time = time.time()
     for index, cookie in enumerate(cookies):
         #print(f"\n=====开始第 {index+1} 个多看账号=====")
-        tz = "第 ",{index+1}," 个多看账号\n"
+        tz = "第 "+{index+1}+" 个多看账号\n"
         dksign = DuoKan(cookie)
         dksign.get_info()
         tz += dksign.check_in() + "\n"
