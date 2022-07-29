@@ -388,7 +388,12 @@ class DuoKan:
             data=send_data,
         )
         print(response.json()["ok"])
-
+try:
+    from sendNotify import send
+except Exception as error:
+    logger.info('推送文件有误')
+    logger.info(f'失败原因:{error}')
+    sys.exit(0)
 
 if __name__ == "__main__":
     cookies = os.environ["COOKIES"].split("\n")
