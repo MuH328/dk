@@ -414,3 +414,4 @@ if __name__ == "__main__":
         print(tz)
         #dksign.push(tz)
     print(f"\n\n🕛耗时：{(time.time() - start_time):.2f} 秒")
+    send('多看书币',tz)
