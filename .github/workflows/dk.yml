@@ -1,4 +1,4 @@
-name: duokan
+name: dk
 
 on:
   workflow_dispatch:
