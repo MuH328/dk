@@ -27,5 +27,5 @@ jobs:
       - name: '运行【多看阅读】' 
         run: python3 duokan.py 
         env:
-            COOKIES: ${{ secrets.COOKIE_DUOKAN }}
+            COOKIE_DUOKAN: ${{ secrets.COOKIE_DUOKAN }}
             QYWX_AM: ${{ secrets.QYWX_AM }}
