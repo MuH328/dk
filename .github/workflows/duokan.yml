@@ -3,7 +3,7 @@ name: duokan
 on:
   workflow_dispatch:
   schedule:
-    - cron: '11 9,21 * * *'
+    - cron: '2 5 * * *'
   watch:
     types: [started]
 env:
