@@ -27,5 +27,5 @@ jobs:
       - name: '运行恩山签到' 
         run: python3 enshan.py 
         env:
-            COOKIES: ${{ secrets.COOKIE_ENSHAN }}
+            COOKIE_ENSHAN: ${{ secrets.COOKIE_ENSHAN }}
             QYWX_AM: ${{ secrets.QYWX_AM }}
