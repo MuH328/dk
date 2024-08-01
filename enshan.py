@@ -8,7 +8,7 @@ except:
 from lxml import etree
 # 判断环境变量里面是否有ck
 
-cookie = os.environ.get("cookie_enshan")
+cookie = os.environ.get("COOKIE_ENSHAN")
 def run(*arg):
     msg = ""
     s = requests.Session()
