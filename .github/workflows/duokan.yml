@@ -1,7 +1,7 @@
 name: duokan
 
 on:
-#  workflow_dispatch:
+  workflow_dispatch:
   schedule:
     - cron: '12 16 * * *'
   watch:
