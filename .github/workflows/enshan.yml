@@ -1,9 +1,9 @@
-name: dk
+name: enshan
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '11 9,21 * * *'
+    - cron: '5 4 * * *'
   watch:
     types: [started]
 env:
@@ -27,5 +27,5 @@ jobs:
       - name: '运行恩山签到' 
         run: python3 enshan.py 
         env:
-            COOKIES: ${{ secrets.cookie_enshan }}
+            COOKIES: ${{ secrets.COOKIE_ENSHAN }}
             QYWX_AM: ${{ secrets.QYWX_AM }}
