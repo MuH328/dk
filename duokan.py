@@ -397,7 +397,7 @@ except Exception as error:
 
 if __name__ == "__main__":
 
-    cookies =os.environ["cookie_duokan"].split("\n")
+    cookies =os.environ["COOKIE_DUOKAN"].split("\n")
     start_time = time.time()
     for index, cookie in enumerate(cookies):
         #print (cookie)
