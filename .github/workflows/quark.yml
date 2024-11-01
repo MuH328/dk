@@ -19,7 +19,7 @@ jobs:
           python3 ./quark.py
         env:
           COOKIE_QUARK1: ${{ secrets.COOKIE_QUARK1 }}
-          COOKIE_QUARK2: ${{ secrets.COOKIE_QUARK2 }}
-          COOKIE_QUARK3: ${{ secrets.COOKIE_QUARK3 }}
+          #COOKIE_QUARK2: ${{ secrets.COOKIE_QUARK2 }}
+          #COOKIE_QUARK3: ${{ secrets.COOKIE_QUARK3 }}
           BARK_DEVICEKEY: ${{ secrets.BARK_DEVICEKEY }}
           BARK_ICON: ${{ secrets.BARK_ICON }}
