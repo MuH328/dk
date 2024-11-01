@@ -113,41 +113,14 @@ class Quark:
         msg += log + "\n"
         return msg
 
-def bark(device_key, title, content, bark_icon):
-    if not device_key:
-        return 2
-
-    url = "https://api.day.app/push"
-    headers = {
-        "content-type": "application/json",
-        "charset": "utf-8"
-    }
-    data = {
-        "title": title,
-        "body": content,
-        "device_key": device_key
-    }
-
-    if not bark_icon:
-        bark_icon = ''
-    if len(bark_icon) > 0:
-        url += '?icon=' + bark_icon
-        print('拼接icon')
-    else:
-        print('不拼接icon')
-
-    resp = requests.post(url, headers=headers, data=json.dumps(data))
-    resp_json = resp.json()
-    if resp_json["code"] == 200:
-        print(f"[Bark]Send message to Bark successfully.")
-    if resp_json["code"] != 200:
-        print(f"[Bark][Send Message Response]{resp.text}")
-        return -1
-    return 0
+try:
+    from notify import send
+except Exception as error:
+    logger.info('推送文件有误')
+    logger.info(f'失败原因:{error}')
+    sys.exit(0)
 
 def main():
-    bark_device_key = os.environ.get('BARK_DEVICEKEY')
-    bark_icon = os.environ.get('BARK_ICON')
 
     wait = random.randint(4, 13)
     time.sleep(wait)
@@ -185,8 +158,8 @@ def main():
         message_all = re.sub('\n+', '\n', message_all).rstrip('\n')
         message = message_all
 
-    bark(bark_device_key, title, message, bark_icon)
-
+#   bark(bark_device_key, title, message, bark_icon)
+    send('📣夸克签到通知📣',message)
     print('finish')
 
 
