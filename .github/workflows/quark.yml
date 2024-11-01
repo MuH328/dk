@@ -1,4 +1,4 @@
-name: quark-sign
+name: quark
 on:
   schedule:
     - cron: 33 22 * * *
@@ -16,7 +16,7 @@ jobs:
           pip3 install -r ./requirements.txt
       - name: Run sign
         run: |
-          python3 ./main.py
+          python3 ./quark.py
         env:
           COOKIE_QUARK1: ${{ secrets.COOKIE_QUARK1 }}
           COOKIE_QUARK2: ${{ secrets.COOKIE_QUARK2 }}
