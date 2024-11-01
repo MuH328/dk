@@ -157,7 +157,7 @@ def main():
         message_all = '\n'.join(message_all)
         message_all = re.sub('\n+', '\n', message_all).rstrip('\n')
         message = message_all
-
+    print(message)
 #   bark(bark_device_key, title, message, bark_icon)
     send('📣夸克签到通知📣',message)
     print('finish')
