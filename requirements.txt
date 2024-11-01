@@ -1,2 +1,4 @@
 requests
 lxml
+tenacity
+bs4
