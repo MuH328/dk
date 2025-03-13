@@ -16,7 +16,7 @@ def run(*arg):
 
     # 签到
     #url = "https://www.right.com.cn/forum/home.php?mod=spacecp&ac=credit&op=log&suboperation=creditrulelog"
-   url = "https://www.right.com.cn/FORUM/home.php"
+    url = "https://www.right.com.cn/FORUM/home.php"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0',
         'Connection' : 'keep-alive',
